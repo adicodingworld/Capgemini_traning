@@ -6,7 +6,7 @@ public class SalaryCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Please provide your monthly salary: ");
+        System.out.print("Please input your monthly salary: ");
         double monthlySalary = scanner.nextDouble();
 
         System.out.print("Enter your birth date (YYYY-MM-DD): ");
@@ -19,13 +19,13 @@ public class SalaryCalculator {
 
         // Age validation
         if (age < 18) {
-            System.out.println("*********************************");
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             System.out.println("Invalid age. Age must be at least 18 years.");
-            System.out.println("*********************************");
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         } else if (age > 55) {
-            System.out.println("*********************************");
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             System.out.println("Invalid age. Age must be less than 55 years.");
-            System.out.println("*********************************");
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         } else if (age >= 18 && age <= 55) {
             // Salary range check
             if (monthlySalary >= 4500 && monthlySalary <= 6500) {
